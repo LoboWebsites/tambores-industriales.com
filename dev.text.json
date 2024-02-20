@@ -1,0 +1,98 @@
+{
+    "navigationBar": {
+        "links": {
+            "home": {
+                "en": "Home",
+                "es": "Inicio"
+            },
+            "about": {
+                "en": "About",
+                "es": "Acerca de mí"
+            },
+            "contact": {
+                "en": "Contact",
+                "es": "Contacto"
+            }
+        }
+    },
+    "home": {
+        "body": {
+            "hello": {
+                "en": "This is a home page.",
+                "es": "Esta es la página de inicio."
+            }
+        }
+    },
+    "about": {
+        "body": {
+            "hello": {
+                "en": "This is an about me page.",
+                "es": "Esta es la página acerca de mí."
+            }
+        }
+    },
+    "contact": {
+        "body": {
+            "hello": {
+                "en": "This is a contact page.",
+                "es": "Esta es la página de contacto."
+            }
+        }
+    },
+    "footer": {
+        "content": {
+            "siteDescription": {
+                "en": "This is a test description - how can this website help the client.",
+                "es": "Esta es una descripción de prueba - cómo ayudará este sitio web al cliente."
+            },
+            "contactMeTitle": {
+                "en": "Contact",
+                "es": "Contacto"
+            }
+        }
+    },
+    "forms": {
+        "contactForm": {
+            "formTitle": {
+                "en": "Or... send me a message!",
+                "es": "O... ¡Envíame un mensaje!"
+            },
+            "formNameInput": {
+                "en": "Name (optional):",
+                "es": "Nombre (opcional):"
+            },
+            "formEmailInput": {
+                "en": "Email:",
+                "es": "Email:"
+            },
+            "formMessageInput": {
+                "en": "Message:",
+                "es": "Mensaje:"
+            },
+            "formSubmitButton": {
+                "en": "Send",
+                "es": "Enviar"
+            },
+            "formSubmitButtonSuccess": {
+                "en": "Sent!",
+                "es": "Enviado!"
+            }
+        }
+    },
+    "construction": {
+        "content": {
+            "title": {
+                "en": "In construction!",
+                "es": "¡En Construcción!"
+            },
+            "subtitle": {
+                "en": "This functionality will be ready soon. Contact me for more info:",
+                "es": "Esta funcionalidad estará lista pronto. Contáctame para más información:"
+            },
+            "contact": {
+                "en": "Contant me",
+                "es": "Contáctame"
+            }
+        }
+    }
+}

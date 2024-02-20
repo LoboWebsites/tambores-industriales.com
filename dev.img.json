@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "name": "/placeholder.png",
+            "id": 1,
+            "publicFolderFallbackPath": "/placeholder.png",
+            "page": "home",
+            "version": 1
+        },
+        {
+            "name": "/placeholder.png",
+            "id": 2,
+            "publicFolderFallbackPath": "/placeholder.png",
+            "page": "about",
+            "version": 1
+        },
+        {
+            "name": "/placeholder.png",
+            "id": 3,
+            "publicFolderFallbackPath": "/placeholder.png",
+            "page": "contact",
+            "version": 1
+        }
+    ]
+}
