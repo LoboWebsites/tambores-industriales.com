@@ -1,0 +1,29 @@
+{
+    "categories": ["Category 1", "Category 2"],
+    "items": [
+        {
+            "id": "id1",
+            "title": "Test article 1",
+            "subtitle": "Subtite",
+            "thumbnailUrl": "/placeholder.png",
+            "htmlContent": "<p>Test article 1 content</p>",
+            "author": "Author 1",
+            "publicationDate": 1705149330,
+            "categories": ["Category 1"],
+            "views": 0,
+            "metadata": {}
+        },
+        {
+            "id": "id2",
+            "title": "Test article 2",
+            "subtitle": "",
+            "thumbnailUrl": "/placeholder.png",
+            "htmlContent": "<p>Test article 2 content</p>",
+            "author": "Author 2",
+            "publicationDate": 1705149330,
+            "categories": ["Category 2"],
+            "views": 0,
+            "metadata": {}
+        }
+    ]
+}

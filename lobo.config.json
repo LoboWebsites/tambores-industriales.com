@@ -1,6 +1,6 @@
 {
-    "languages": ["en", "es"],
-    "primaryLanguage": "en",
+    "languages": ["es"],
+    "primaryLanguage": "es",
     "imagesCacheTtlBrowser": 2147483647,
     "imagesCacheTtlRedis": 604800,
     "configCacheTtlRedis": 604800,

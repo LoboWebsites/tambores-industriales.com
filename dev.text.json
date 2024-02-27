@@ -1,80 +1,69 @@
 {
-    "navigationBar": {
+    "barraDeNavegación": {
         "links": {
-            "home": {
-                "en": "Home",
+            "inicio": {
                 "es": "Inicio"
             },
-            "about": {
-                "en": "About",
-                "es": "Acerca de mí"
+            "servicios": {
+                "es": "Servicios"
             },
-            "contact": {
-                "en": "Contact",
-                "es": "Contacto"
+            "contáctanos": {
+                "es": "Contáctanos"
+            },
+            "trabajaConNosotros": {
+                "es": "Trabaja con Nosotros"
             }
         }
     },
-    "home": {
-        "body": {
+    "inicio": {
+        "heroSection": {
             "hello": {
-                "en": "This is a home page.",
                 "es": "Esta es la página de inicio."
             }
         }
     },
-    "about": {
+    "servicios": {
         "body": {
             "hello": {
-                "en": "This is an about me page.",
                 "es": "Esta es la página acerca de mí."
             }
         }
     },
-    "contact": {
+    "trabajaConNosotros": {
         "body": {
             "hello": {
-                "en": "This is a contact page.",
                 "es": "Esta es la página de contacto."
             }
         }
     },
     "footer": {
-        "content": {
-            "siteDescription": {
-                "en": "This is a test description - how can this website help the client.",
+        "contenido": {
+            "descripciónDePágina": {
                 "es": "Esta es una descripción de prueba - cómo ayudará este sitio web al cliente."
             },
-            "contactMeTitle": {
-                "en": "Contact",
-                "es": "Contacto"
+            "tituloDeContácto": {
+                "es": "Contácto"
             }
         }
     },
     "forms": {
         "contactForm": {
             "formTitle": {
-                "en": "Or... send me a message!",
                 "es": "O... ¡Envíame un mensaje!"
             },
             "formNameInput": {
-                "en": "Name (optional):",
                 "es": "Nombre (opcional):"
             },
             "formEmailInput": {
-                "en": "Email:",
                 "es": "Email:"
             },
             "formMessageInput": {
-                "en": "Message:",
                 "es": "Mensaje:"
             },
             "formSubmitButton": {
-                "en": "Send",
                 "es": "Enviar"
             },
             "formSubmitButtonSuccess": {
-                "en": "Sent!",
                 "es": "Enviado!"
             }
         }
@@ -82,15 +71,12 @@
     "construction": {
         "content": {
             "title": {
-                "en": "In construction!",
                 "es": "¡En Construcción!"
             },
             "subtitle": {
-                "en": "This functionality will be ready soon. Contact me for more info:",
                 "es": "Esta funcionalidad estará lista pronto. Contáctame para más información:"
             },
             "contact": {
-                "en": "Contant me",
                 "es": "Contáctame"
             }
         }

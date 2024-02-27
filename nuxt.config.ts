@@ -7,6 +7,26 @@ export default defineNuxtConfig({
         head: {
             script: [],
             style: [{ children: tailwindConfig.cssRootVars, type: "text/css" }],
+            meta: [
+                // Open Graph Meta Tags
+                { property: "og:title", content: "Tambores Industriales" },
+                {
+                    property: "og:description",
+                    content: "Tambores abiertos, tambores cerrados, contenedores de plástico. Bogotá.",
+                },
+                { property: "og:image", content: "/logo-1.svg" },
+                { property: "og:url", content: "www.tamboresindustriales.com" },
+                { property: "og:type", content: "website" },
+
+                // Twitter Meta Tags
+                { name: "twitter:card", content: "summary_large_image" },
+                { name: "twitter:title", content: "Tambores Industriales" },
+                {
+                    name: "twitter:description",
+                    content: "Tambores abiertos, tambores cerrados, contenedores de plástico. Bogotá.",
+                },
+                //{ name: "twitter:image", content: "/logo-1.svg" },
+            ],
         },
     },
 

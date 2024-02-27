@@ -1,5 +1,22 @@
 <template>
-    <section class="mx-auto px-12 lg:px-32 2xl:px-80 py-14">
-        <slot />
+    <section
+        class="min-h-full"
+        :style="{
+            paddingBottom: paddingBottom.section,
+            paddingTop: paddingTop.section,
+        }"
+    >
+        <div
+            class="m-auto"
+            :style="{
+                maxWidth: maxWidth.section,
+            }"
+        >
+            <slot />
+        </div>
     </section>
 </template>
+
+<script setup>
+    const { maxWidth, paddingBottom, paddingTop } = useLayout();
+</script>

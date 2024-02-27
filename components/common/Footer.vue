@@ -2,8 +2,8 @@
     <footer class="footer py-14 text-secondary-text">
         <NuxtLayout name="section">
             <div class="flex flex-col md:flex-row gap-12 md:gap-24 text-left justify-between">
-                <div class="md:w-1/3">
-                    <p>
+                <div class="flex flex-col md:w-1/3">
+                    <p class="mb-2">
                         <a href="#top">
                             <img
                                 src="/placeholder.png"
@@ -14,28 +14,32 @@
                             />
                         </a>
                     </p>
-                    <UiDivider class="my-2" />
                     <p>
-                        {{ $t("footer", "content", "siteDescription") }}
+                        {{ $t("footer", "contenido", "descripciónDePágina") }}
                     </p>
+                    <div class="flex gap-12 md:gap-24 mt-8 flex-grow items-end">
+                        <p>© Copyright {{ new Date().getFullYear() }}</p>
+                    </div>
                 </div>
 
                 <div class="flex flex-col md:items-center md:w-1/3">
                     <div>
-                        <p class="text-xl font-bold">Links</p>
-                        <UiDivider class="mb-2" />
-                        <a v-for="link in links" class="cursor-pointer flex" :href="link.navigateTo">
-                            {{ link.name }}<UiHoverUnderline />
+                        <p class="text-xl font-bold mb-2">Links</p>
+                        <a
+                            v-for="link in links"
+                            class="cursor-pointer flex duration-200 hover:text-gray-400"
+                            :href="link.navigateTo"
+                        >
+                            {{ link.name }}
                         </a>
                     </div>
                 </div>
 
                 <div class="flex flex-col md:items-end md:w-1/3">
-                    <div>
-                        <p class="text-xl font-bold">
-                            {{ $t("footer", "content", "contactMeTitle") }}
+                    <div class="flex flex-col">
+                        <p class="text-xl font-bold mb-2">
+                            {{ $t("footer", "contenido", "tituloDeContácto") }}
                         </p>
-                        <UiDivider class="mb-2" />
                         <p class="flex gap-2 items-center" v-for="(l, i) in contactLinks" :key="i">
                             <Icon :name="l.icon" />
                             <a
@@ -49,17 +53,11 @@
                             </a>
                             <span v-else>{{ l.text }}</span>
                         </p>
+                        <a href="/contactanos">
+                            <UiButton class="mt-6 mb-0 flex-grow items-end" secondary>Contáctanos </UiButton>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-center gap-12 md:gap-24 mt-8">
-                <p>© Copyright {{ new Date().getFullYear() }}</p>
-                <p class="underline">
-                    <Icon name="ic:sharp-language" size="20" />
-                    <a @click="switchLanguage" class="cursor-pointer">
-                        {{ lang === "es" ? "See the page in english" : "Ver la página en español" }}
-                    </a>
-                </p>
             </div>
         </NuxtLayout>
     </footer>
@@ -67,7 +65,7 @@
 
 <script setup>
     const { websiteLinks, contactLinks } = useConstants();
-    const { $t, lang, switchLanguage } = useConfigStore();
+    const { $t } = useConfigStore();
 
     const links = computed(() => {
         let links = [];

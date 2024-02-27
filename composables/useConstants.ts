@@ -2,31 +2,21 @@ export function useConstants() {
     const { $t } = useConfigStore();
     const websiteLinks = ref([
         {
-            name: $t("navigationBar", "links", "home"),
+            name: $t("barraDeNavegación", "links", "inicio"),
             navigateTo: "/",
         },
         {
-            name: $t("navigationBar", "links", "about"),
-            navigateTo: "/about",
+            name: $t("barraDeNavegación", "links", "servicios"),
+            navigateTo: "/servicios",
         },
         {
-            name: $t("navigationBar", "links", "contact"),
-            navigateTo: "/contact",
+            name: $t("barraDeNavegación", "links", "contáctanos"),
+            navigateTo: "/contactanos",
         },
-        // SUBLINKS EXAMPLE
-        // {
-        //     name: $t("navigationBar", "links", "features"),
-        //     list: [
-        //         {
-        //             name: $t("navigationBar", "links", "gallery"),
-        //             navigateTo: "/features/gallery",
-        //         },
-        //         {
-        //             name: $t("navigationBar", "links", "blog"),
-        //             navigateTo: "/features/blog",
-        //         },
-        //     ],
-        // },
+        {
+            name: $t("barraDeNavegación", "links", "trabajaConNosotros"),
+            navigateTo: "/trabaja-con-nosotros",
+        },
     ]);
 
     const contactLinks = ref([
@@ -37,27 +27,15 @@ export function useConstants() {
             link: "",
         },
         {
-            name: "WhatsApp",
-            text: "(+xx) xxx xxxxxxx",
-            icon: "logos:whatsapp-icon",
+            name: "Teléfono",
+            text: "781 6856 - 711 4232",
+            icon: "material-symbols:call-sharp",
             link: "",
         },
         {
-            name: "Instagram",
-            text: "Instagram",
-            icon: "skill-icons:instagram",
-            link: "",
-        },
-        {
-            name: "Facebook",
-            text: "Facebook",
-            icon: "logos:facebook",
-            link: "",
-        },
-        {
-            name: "TikTok",
-            text: "TikTok",
-            icon: "logos:tiktok-icon",
+            name: "Ubicación",
+            text: "Carrera 4 No. 10-123 Sur Soacha",
+            icon: "material-symbols:location-on",
             link: "",
         },
     ]);

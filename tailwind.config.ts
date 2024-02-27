@@ -2,10 +2,9 @@ const theme = {
     darkMode: "class",
     extend: {
         colors: {
-            primary: "#749be5",
-            primarySold: "#a17978",
+            primary: "#334a77",
             secondary: "#e8f4fc",
-            background: "#fafafa",
+            tertiary: "#fafafa",
             "primary-text": "#3b475a",
             "secondary-text": "white",
         },

@@ -22,7 +22,6 @@
 <script setup lang="ts">
     import devText from "~/dev.text.json";
     import devImg from "~/dev.img.json";
-    import devBlog from "~/dev.blog.json";
     import devEcommerce from "~/dev.ecommerce.json";
     import {
         Feature,
@@ -107,44 +106,6 @@
         );
 
         return Promise.allSettled(promises);
-    }
-
-    async function uploadBlog() {
-        let blog: BlogArticleFirebase = JSON.parse(JSON.stringify(devBlog));
-
-        for (const article of blog.items) {
-            // Adjust according to what is in the metadata property
-            let thumbnailFile = await helpers.loadImageAsBase64(article.thumbnailUrl);
-            article.thumbnailUrl = thumbnailFile.base64;
-
-            for (const key of Object.keys(article.metadata.images)) {
-                let metadataFile = await helpers.loadImageAsBase64(article.metadata.images[key].base64);
-                article.metadata.images[key].base64 = metadataFile.base64;
-                useFetch("/api/images", {
-                    method: "POST",
-                    body: {
-                        files: [{ id: article.metadata.images[key].id, base64: metadataFile.base64 }],
-                    },
-                });
-            }
-
-            article.sizeInKb = LoboHelpers.getObjectSizeInKB(article);
-
-            // Clear base64 before uploading to firebase
-            for (const key of Object.keys(article.metadata.images)) {
-                article.metadata.images[key].base64 = "";
-            }
-        }
-
-        const payload = {
-            feature: Feature.blog,
-            config: blog,
-        };
-
-        return useFetch("/api/loboconfig", {
-            method: "POST",
-            body: payload,
-        });
     }
 
     async function uploadEcommerce() {

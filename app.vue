@@ -14,8 +14,8 @@
     });
 
     useSeoMeta({
-        title: "Example Website",
-        description: "Example description.",
+        title: "Tambores Industriales",
+        description: "Tambores abiertos, tambores cerrados, contenedores de plástico. Bogotá.",
     });
 </script>
 
