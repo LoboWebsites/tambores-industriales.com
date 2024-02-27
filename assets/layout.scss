@@ -1,9 +1,14 @@
 // Config
+$sm: 520px;
+$md: 768px;
+$lg: 990px;
+$xl: 1280px;
+
 $sectionPaddingSm: 50px;
 $sectionPaddingLg: 65px;
 $sectionMaxWidthSm: 360px;
-$sectionMaxWidthMd: 700px;
-$sectionMaxWidthLg: 900px;
+$sectionMaxWidthMd: 500px;
+$sectionMaxWidthLg: 950px;
 $sectionMaxWidthXl: 1200px;
 
 $navbarHeight: 80px;
@@ -16,7 +21,6 @@ section {
         max-width: $sectionMaxWidthSm;
     }
 }
-
 nav {
     width: 100vw;
     height: $navbarHeight;
@@ -26,7 +30,7 @@ nav {
 }
 
 // Md screens
-@media screen and (min-width: 768px) {
+@media (min-width: $sm) {
     section {
         padding-top: $sectionPaddingLg;
         padding-bottom: $sectionPaddingLg;
@@ -42,7 +46,7 @@ nav {
 }
 
 // Lg screens
-@media screen and (min-width: 992px) {
+@media (min-width: $lg) {
     section {
         padding-top: $sectionPaddingLg;
         padding-bottom: $sectionPaddingLg;
@@ -58,7 +62,7 @@ nav {
 }
 
 // Xl screens
-@media screen and (min-width: 1200px) {
+@media (min-width: $xl) {
     section {
         padding-top: $sectionPaddingLg;
         padding-bottom: $sectionPaddingLg;

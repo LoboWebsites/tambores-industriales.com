@@ -1,7 +1,8 @@
 <template>
     <NuxtLayout>
         <CommonNavbar bg-color="var(--primary)" :scroll-hide="!sm" />
-        <HomeHeroSection />/
+        <HomeHeroSection />
+        <HomeServices />
         <CommonFooter />
     </NuxtLayout>
 </template>

@@ -2,13 +2,14 @@
     <div class="bg w-full pt-20">
         <NuxtLayout name="section">
             <div class="flex">
-                <div class="w-1/2 mt-20">
-                    <h1 class="font-bold mb-2">Tambores Industriales</h1>
-                    <h2 class="mb-10">
+                <div class="lg:w-1/2 mt-20 text-center lg:text-left">
+                    <h1 class="font-bold">Tambores Industriales,</h1>
+                    <h2 class="mb-4 -mt-1 lg:-mt-4">un mundo de diferencia</h2>
+                    <p class="mb-10 text-lg">
                         34 años ofreciendo calidad en elaboración, ensamble y reacondicionamiento de canecas metálicas,
                         cumpliendo todas las normas ambientales.
-                    </h2>
-                    <UiButton primary>Nuestros Servicios</UiButton>
+                    </p>
+                    <UiButton primary class="m-auto lg:m-0">Nuestros Servicios</UiButton>
                 </div>
             </div>
         </NuxtLayout>
@@ -24,5 +25,9 @@
         background-size: cover;
         background-position: center;
         height: 760px;
+
+        @media (max-width: 1024px) {
+            background-position: left;
+        }
     }
 </style>
