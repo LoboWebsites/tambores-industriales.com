@@ -1,0 +1,74 @@
+// Config
+$sectionPaddingSm: 50px;
+$sectionPaddingLg: 65px;
+$sectionMaxWidthSm: 360px;
+$sectionMaxWidthMd: 700px;
+$sectionMaxWidthLg: 900px;
+$sectionMaxWidthXl: 1200px;
+
+$navbarHeight: 80px;
+
+// Sm screens
+section {
+    padding-top: $sectionPaddingSm;
+    padding-bottom: $sectionPaddingSm;
+    > div {
+        max-width: $sectionMaxWidthSm;
+    }
+}
+
+nav {
+    width: 100vw;
+    height: $navbarHeight;
+    > div {
+        max-width: $sectionMaxWidthSm;
+    }
+}
+
+// Md screens
+@media screen and (min-width: 768px) {
+    section {
+        padding-top: $sectionPaddingLg;
+        padding-bottom: $sectionPaddingLg;
+        > div {
+            max-width: $sectionMaxWidthMd;
+        }
+    }
+    nav {
+        > div {
+            max-width: $sectionMaxWidthMd;
+        }
+    }
+}
+
+// Lg screens
+@media screen and (min-width: 992px) {
+    section {
+        padding-top: $sectionPaddingLg;
+        padding-bottom: $sectionPaddingLg;
+        > div {
+            max-width: $sectionMaxWidthLg;
+        }
+    }
+    nav {
+        > div {
+            max-width: $sectionMaxWidthLg;
+        }
+    }
+}
+
+// Xl screens
+@media screen and (min-width: 1200px) {
+    section {
+        padding-top: $sectionPaddingLg;
+        padding-bottom: $sectionPaddingLg;
+        > div {
+            max-width: $sectionMaxWidthXl;
+        }
+    }
+    nav {
+        > div {
+            max-width: $sectionMaxWidthXl;
+        }
+    }
+}

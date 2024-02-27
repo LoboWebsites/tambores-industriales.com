@@ -1,6 +1,6 @@
 export default function useScreen() {
-    const width = ref(0);
-    const height = ref(0);
+    const width = ref(1280);
+    const height = ref(720);
 
     const xl = computed(() => width.value > 1280);
     const lg = computed(() => width.value > 1024);
