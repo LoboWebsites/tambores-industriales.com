@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout> <CommonNavbar primary /> <CommonFooter /></NuxtLayout>
+    <NuxtLayout> <CommonNavbar bg-color="var(--primary)" /> <CommonFooter /></NuxtLayout>
 </template>
 
 <script setup></script>

@@ -1,9 +1,9 @@
 <template>
     <nav
         id="home-navbar"
-        class="bg-transparent gap-8 absolute top-0 left-0 z-50"
-        :class="{ '!bg-primary': primary, '!fixed': scrollHide }"
-        data-aos="fade-in"
+        class="gap-8 absolute top-0 left-0 z-50 duration-500"
+        :class="{ '!fixed': scrollHide, '!bg-transparent': transparentOnTop }"
+        :style="{ 'background-color': bgColor }"
     >
         <div class="m-auto h-full flex items-center">
             <div>
@@ -17,7 +17,7 @@
                     />
                 </a>
             </div>
-            <ul class="flex flex-grow gap-8 justify-end text-primary-text">
+            <ul class="flex flex-grow gap-8 justify-end">
                 <li v-for="link in websiteLinks" class="self-center hidden lg:flex">
                     <UiPopup v-if="link.list" open-on-hover>
                         {{ link.name }} <Icon name="ic:baseline-arrow-drop-down" />
@@ -55,13 +55,16 @@
 <script setup>
     const { websiteLinks } = useConstants();
 
-    const { bgColor, scrollHide } = defineProps({
+    const { bgColor, scrollHide, transparentOnTop } = defineProps({
         bgColor: String,
+        transparentOnTop: Boolean,
         scrollHide: {
             type: Boolean,
             default: true,
         },
     });
+
+    const transparentTransition = ref(false);
 
     function setupScrollHide() {
         const navbar = document.getElementById("home-navbar");
@@ -73,9 +76,21 @@
             if (prevScrollPos > currentScrollPos) {
                 // Scrolling up
                 navbar.style.transform = "translateY(0)";
+                if (transparentOnTop && currentScrollPos === 0) {
+                    navbar.classList.add("!bg-transparent");
+                    navbar.classList.remove("!text-white");
+                }
             } else {
                 // Scrolling down
                 navbar.style.transform = `translateY(-${navbar.offsetHeight}px)`;
+                if (transparentOnTop && !transparentTransition.value) {
+                    transparentTransition.value = true;
+                    setTimeout(() => {
+                        navbar.classList.remove("!bg-transparent");
+                        navbar.classList.add("!text-white");
+                        transparentTransition.value = false;
+                    }, 500);
+                }
             }
 
             prevScrollPos = currentScrollPos;

@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout>
-        <CommonNavbar primary />
+        <CommonNavbar bg-color="var(--primary)" />
         <NuxtLayout name="section">
             <div class="mt-32 flex flex-col items-center">
                 <div>{{ $t("about", "body", "hello") }}</div>
