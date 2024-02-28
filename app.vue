@@ -22,7 +22,7 @@
 <style lang="scss">
     body,
     html {
-        background-color: var(--background);
+        background-color: #fafafa;
         color: var(--primary-text);
         font-family: "Poppins", sans-serif, Helvetica, Arial, system-ui;
         overflow-x: hidden;

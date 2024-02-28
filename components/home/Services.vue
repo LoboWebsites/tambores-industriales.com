@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout name="section">
         <div>
-            <div class="m-auto text-center mb-20">
+            <div class="m-auto text-center mb-20 lg:w-8/12">
                 <h2 class="font-bold mb-4">Nuestros Servicios</h2>
                 <p>
                     Ofrecemos a nuestros clientes tambores metálicos abiertos y cerrados de 55 galones y IBC plásticos

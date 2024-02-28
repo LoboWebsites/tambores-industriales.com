@@ -22,13 +22,13 @@ export function useConstants() {
     const contactLinks = ref([
         {
             name: "Email",
-            text: "test@email.com",
+            text: " sandra.tamind@gmail.com",
             icon: "material-symbols:mail",
             link: "",
         },
         {
             name: "Teléfono",
-            text: "781 6856 - 711 4232",
+            text: "601 781 6856 - 601 711 4232",
             icon: "material-symbols:call-sharp",
             link: "",
         },

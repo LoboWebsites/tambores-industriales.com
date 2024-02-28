@@ -4,10 +4,10 @@
             <div class="flex">
                 <div class="lg:w-1/2 mt-20 text-center lg:text-left">
                     <h1 class="font-bold">Tambores Industriales,</h1>
-                    <h2 class="mb-4 -mt-1 lg:-mt-4">un mundo de diferencia</h2>
+                    <h2 class="mb-4 -mt-1 lg:-mt-4 italic">un mundo de diferencia</h2>
                     <p class="mb-10 text-lg">
-                        34 años ofreciendo calidad en elaboración, ensamble y reacondicionamiento de canecas metálicas,
-                        cumpliendo todas las normas ambientales.
+                        Desde 1988 trabajamos con envases para la industria química y alimentaria. Ofrecemos soluciones
+                        en envases metálicos y plásticos para el almacenamiento y transporte de productos.
                     </p>
                     <UiButton primary class="m-auto lg:m-0">Nuestros Servicios</UiButton>
                 </div>
