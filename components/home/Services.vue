@@ -9,7 +9,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-3 gap-10 mb-20">
+            <div class="grid lg:grid-cols-3 gap-10 mb-20">
                 <div v-for="block in blocks" class="text-center">
                     <img :src="block.image" alt="imagen-servicio" class="w-40 h-40 rounded-md shadow-md m-auto" />
                     <h2 class="font-bold my-2">{{ block.title }}</h2>
