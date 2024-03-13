@@ -13,7 +13,7 @@
         <label for="input2">Teléfono </label>
         <input
             id="input2"
-            type="phone"
+            type="tel"
             name="phone"
             required
             class="bg-white rounded-lg h-12 px-4 py-2 duration-700 outline-transparent focus-visible:outline-primary text-primary-text"
@@ -28,6 +28,9 @@
             class="bg-white rounded-lg h-12 px-4 py-2 duration-700 outline-transparent focus-visible:outline-primary text-primary-text"
             v-model="form.email"
         />
+
+        <label for="pdfFile">Hoja de vida (PDF) </label>
+        <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" @change="onPdfUpload" />
 
         <label for="input4">Comentario </label>
         <textarea
@@ -48,6 +51,7 @@
         name: "",
         phone: "",
         email: "",
+        attachments: [],
         comment: "",
     });
 
@@ -57,6 +61,14 @@
         class: "",
     });
 
+    function onPdfUpload(event) {
+        const pdf = event.target.files[0];
+
+        const formData = new FormData();
+        formData.append("file", pdf);
+        form.value.attachments.push(formData);
+    }
+
     async function onSubmit() {
         let subject = "Formulario de Contácto - Tamboresindustriales.com";
         let html = `
@@ -65,7 +77,7 @@
             <p><strong>Correo:</strong> ${form.value.email}</p>
             <p><strong>Comentario:</strong> ${form.value.comment}</p>
         `;
-        await useFetch("/api/mail", { method: "post", body: { subject, html } });
+        await useFetch("/api/mail", { method: "post", body: { subject, html, attachments: form.value.attachments } });
 
         form.value.name = form.value.name.replaceAll(/\s/g, "");
         submitBtn.value.text = "Formulario enviado!";

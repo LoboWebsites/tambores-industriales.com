@@ -11,3 +11,5 @@ firebase.config.js
 .env
 dist
 .netlify
+public/*.psd
+public/*/*.psd

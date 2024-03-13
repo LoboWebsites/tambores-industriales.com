@@ -3,7 +3,7 @@ const theme = {
     extend: {
         colors: {
             primary: "#334a77",
-            secondary: "#e8f4fc",
+            secondary: "#ffaa4e",
             tertiary: "#fafafa",
             "primary-text": "#3b475a",
             "secondary-text": "white",

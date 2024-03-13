@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout>
-        <CommonNavbar bg-color="var(--primary)" :scroll-hide="!sm" transparent-on-top />
+        <CommonNavbar bg-color="var(--primary)" :scroll-hide="!sm" transparent-on-top cta-primary />
         <HomeHeroSection />
         <HomeServices />
         <HomeContactUs />

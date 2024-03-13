@@ -3,7 +3,7 @@
         id="home-navbar"
         class="gap-8 absolute top-0 left-0 z-50 duration-500"
         :class="{ '!fixed': scrollHide, '!bg-transparent': transparentOnTop }"
-        :style="{ 'background-color': bgColor }"
+        :style="{ 'background-color': bgColor, color: colorOnTop }"
     >
         <div class="m-auto h-full flex items-center">
             <div>
@@ -18,7 +18,7 @@
                 </a>
             </div>
             <ul class="flex flex-grow gap-8 justify-end">
-                <li v-for="link in websiteLinks" class="self-center hidden lg:flex">
+                <li v-for="link in websiteLinks" class="self-center hidden lg:flex" :class="{ '!hidden': link.isCta }">
                     <UiPopup v-if="link.list" open-on-hover>
                         {{ link.name }} <Icon name="ic:baseline-arrow-drop-down" />
                         <template #content>
@@ -37,7 +37,12 @@
                     <UiPopup noItemsOverflow class="flex items-center">
                         <Icon name="solar:hamburger-menu-linear" class="cursor-pointer" size="26" />
                         <template #content>
-                            <div v-for="(link, i) in websiteLinks" :key="i" class="m-5">
+                            <div
+                                v-for="(link, i) in websiteLinks"
+                                :key="i"
+                                class="m-5"
+                                :class="{ '!hidden': link.isCta }"
+                            >
                                 <a class="cursor-pointer m-auto" :href="link.navigateTo"
                                     >{{ link.name }}
                                     <UiHoverUnderline color="black" />
@@ -46,7 +51,11 @@
                         </template>
                     </UiPopup>
                 </li>
-                <UiButton primary>Contáctanos</UiButton>
+                <div>
+                    <a href="/contactanos#top">
+                        <UiButton :primary="ctaPrimary" :secondary="ctaSecondary">Contáctanos</UiButton>
+                    </a>
+                </div>
             </ul>
         </div>
     </nav>
@@ -55,13 +64,16 @@
 <script setup>
     const { websiteLinks } = useConstants();
 
-    const { bgColor, scrollHide, transparentOnTop } = defineProps({
+    const { bgColor, scrollHide, transparentOnTop, colorOnTop } = defineProps({
         bgColor: String,
         transparentOnTop: Boolean,
+        colorOnTop: String,
         scrollHide: {
             type: Boolean,
             default: true,
         },
+        ctaPrimary: Boolean,
+        ctaSecondary: Boolean,
     });
 
     const transparentTransition = ref(false);
@@ -79,6 +91,9 @@
                 if (transparentOnTop && currentScrollPos === 0) {
                     navbar.classList.add("!bg-transparent");
                     navbar.classList.remove("!text-white");
+                    if (colorOnTop) {
+                        navbar.classList.add(`!text-${colorOnTop}`);
+                    }
                 }
             } else {
                 // Scrolling down
@@ -88,6 +103,7 @@
                     setTimeout(() => {
                         navbar.classList.remove("!bg-transparent");
                         navbar.classList.add("!text-white");
+                        navbar.classList.remove(`!text-${colorOnTop}`);
                         transparentTransition.value = false;
                     }, 500);
                 }

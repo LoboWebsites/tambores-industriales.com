@@ -12,8 +12,12 @@
                         de colaboración comercial o para trabajar con nosotros, estamos listos para escucharte.
                     </p>
                     <div class="flex gap-10">
-                        <UiButton primary>Contácto Clientes</UiButton>
-                        <UiButton secondary>Trabaja con Nosotros</UiButton>
+                        <a href="/contactanos">
+                            <UiButton primary>Contácto Clientes</UiButton>
+                        </a>
+                        <a href="/trabaja-con-nosotros">
+                            <UiButton secondary>Trabaja con Nosotros</UiButton>
+                        </a>
                     </div>
                 </div>
             </div>

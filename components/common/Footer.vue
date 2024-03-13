@@ -53,7 +53,7 @@
                             </a>
                             <span v-else>{{ l.text }}</span>
                         </p>
-                        <a href="/contactanos">
+                        <a href="/contactanos#top">
                             <UiButton class="mt-6 mb-0 flex-grow items-end" secondary>Contáctanos </UiButton>
                         </a>
                     </div>

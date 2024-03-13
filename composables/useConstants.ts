@@ -3,7 +3,7 @@ export function useConstants() {
     const websiteLinks = ref([
         {
             name: $t("barraDeNavegación", "links", "inicio"),
-            navigateTo: "/",
+            navigateTo: "/#top",
         },
         {
             name: $t("barraDeNavegación", "links", "servicios"),
@@ -12,6 +12,7 @@ export function useConstants() {
         {
             name: $t("barraDeNavegación", "links", "contáctanos"),
             navigateTo: "/contactanos",
+            isCta: true,
         },
         {
             name: $t("barraDeNavegación", "links", "trabajaConNosotros"),

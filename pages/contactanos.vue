@@ -1,12 +1,12 @@
 <template>
     <NuxtLayout>
-        <CommonNavbar bg-color="var(--primary)" />
-        <NuxtLayout name="section">
-            <div class="mt-32 flex flex-col items-center">
-                <div>{{ $t("contact", "body", "hello") }}</div>
-                <img :src="$i(1)" style="max-width: 400px" />
-            </div>
-        </NuxtLayout>
+        <CommonNavbar bg-color="var(--primary)" transparent-on-top color-on-top="white" ctaSecondary />
+        <CommonSubpageHeader
+            title="Contáctanos"
+            subtitle="¡Contáctanos para solicitar nuestros servicios! Completa el formulario y nos pondremos en contacto contigo lo antes posible."
+            bgImageUrl="/contact/contact-us-bg.webp"
+        />
+        <ContactContent />
         <CommonFooter />
     </NuxtLayout>
 </template>

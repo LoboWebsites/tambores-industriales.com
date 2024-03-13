@@ -15,7 +15,7 @@
 
     const btnClass = computed(() => {
         let name =
-            "flex justify-center text-primary-text font-semibold py-3 px-10 rounded-sm shadow-xl z-10 transition ease-in duration-150 transform hover:opacity-70 outline-none";
+            "flex justify-center text-primary-text font-semibold py-3 px-4 lg:px-10 rounded-sm shadow-xl z-10 transition ease-in duration-150 transform hover:opacity-70 outline-none";
 
         let types = {
             primary: " bg-primary text-white ",
