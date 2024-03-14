@@ -42,7 +42,7 @@
                     <p class="text-sm italic">*No hacemos disposición final de residuos.</p>
                 </div>
                 <div>
-                    <img class="rounded-md shadow-md" src="/services/fix-oil-barrel.webp" alt="envase metálico" />
+                    <img class="rounded-md shadow-md" src="/services/fix-oil-barrel.webp" alt="tambor" />
                 </div>
             </div>
         </NuxtLayout>
@@ -51,7 +51,7 @@
     <NuxtLayout name="section">
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div>
-                <img class="rounded-md shadow-md" src="/services/contenedor-plastico.webp" alt="envase metálico" />
+                <img class="rounded-md shadow-md" src="/services/contenedor-plastico.webp" alt="contenedor plástico" />
             </div>
             <div>
                 <h2 class="mb-2 font-bold">Venta y reacondicionamiento para contenedores plásticos de 1000 litros</h2>

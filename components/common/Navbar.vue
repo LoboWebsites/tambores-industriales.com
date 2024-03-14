@@ -55,11 +55,13 @@
                         </template>
                     </UiPopup>
                 </li>
-                <div>
-                    <a href="/contactanos#top">
-                        <UiButton :primary="ctaPrimary" :secondary="ctaSecondary">Contáctanos</UiButton>
-                    </a>
-                </div>
+                <li class="list-none">
+                    <div>
+                        <a href="/contactanos#top">
+                            <UiButton :primary="ctaPrimary" :secondary="ctaSecondary">Contáctanos</UiButton>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>

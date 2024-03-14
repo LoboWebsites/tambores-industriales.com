@@ -3,7 +3,7 @@
         <NuxtLayout name="section">
             <div class="grid lg:grid-cols-2 gap-10 lg:gap-20">
                 <div>
-                    <img src="/home/placeholder-1.webp" class="m-auto lg:m-0 rounded-md shadow-md" />
+                    <img src="/home/placeholder-1.webp" alt="Contactanos" class="m-auto lg:m-0 rounded-md shadow-md" />
                 </div>
                 <div>
                     <h2 class="font-bold mb-4">Contáctanos</h2>

@@ -1,6 +1,6 @@
 <template>
     <div class="avatar">
-        <img v-if="props.img" :src="img" />
+        <img v-if="props.img" :src="img" alt="avatar" />
         <span v-else><Icon name="material-symbols:person" class="text-white" size="24" /></span>
     </div>
 </template>
