@@ -31,7 +31,7 @@
 
     <div class="bg-gray-100">
         <NuxtLayout name="section">
-            <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+            <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
                 <div>
                     <h2 class="mb-2 font-bold">Reacondicionamiento para envases metálicos de 55 galones</h2>
                     <p>

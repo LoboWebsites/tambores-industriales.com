@@ -3,7 +3,7 @@
         <NuxtLayout name="section">
             <div class="flex">
                 <div class="lg:w-1/2 mt-20 text-center lg:text-left">
-                    <h1 class="font-bold">Tambores Industriales,</h1>
+                    <h1 class="font-bold">Tambores Industriales</h1>
                     <h2 class="mb-4 -mt-1 lg:-mt-4 italic">un mundo de diferencia</h2>
                     <p class="mb-10 text-lg">
                         Desde 1988 trabajamos con envases para la industria química y alimentaria. Ofrecemos soluciones

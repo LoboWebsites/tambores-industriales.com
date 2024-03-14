@@ -1,7 +1,7 @@
 <template>
     <nav
         id="home-navbar"
-        class="gap-8 absolute top-0 left-0 z-50 duration-500"
+        class="gap-8 absolute top-0 left-0 z-50 duration-500 text-white"
         :class="{ '!fixed': scrollHide, '!bg-transparent': transparentOnTop }"
         :style="{ 'background-color': bgColor, color: colorOnTop }"
     >
@@ -18,7 +18,11 @@
                 </a>
             </div>
             <ul class="flex flex-grow gap-8 justify-end">
-                <li v-for="link in websiteLinks" class="self-center hidden lg:flex" :class="{ '!hidden': link.isCta }">
+                <li
+                    v-for="link in websiteLinks"
+                    class="self-center hidden lg:flex font-bold"
+                    :class="{ '!hidden': link.isCta }"
+                >
                     <UiPopup v-if="link.list" open-on-hover>
                         {{ link.name }} <Icon name="ic:baseline-arrow-drop-down" />
                         <template #content>

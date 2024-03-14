@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout name="section">
-        <div class="grid lg:grid-cols-2 gap-10 lg:gap-20">
+        <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-20">
             <div>
                 <div class="mb-8">
                     <p class="flex gap-2 items-center" v-for="(l, i) in contactLinks" :key="i">

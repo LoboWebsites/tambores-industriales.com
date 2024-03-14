@@ -11,7 +11,7 @@
         <div
             ref="itemsWrapper"
             :class="itemsClass"
-            class="absolute right-0 bg-background rounded-sm shadow-lg text-primary-text p-2 z-50 duration-100"
+            class="absolute right-0 top-10 bg-white rounded-sm shadow-lg text-primary-text p-2 z-50 duration-100"
             @mouseenter="openOnHover ? onMouseEnter() : null"
             @mouseleave="openOnHover ? onMouseLeave() : null"
         >
