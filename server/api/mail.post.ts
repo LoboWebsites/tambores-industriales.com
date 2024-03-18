@@ -4,8 +4,8 @@ export default defineEventHandler(async (event) => {
     try {
         const body = await readBody(event);
         const auth = {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
+            user: process.env.FROM_EMAIL_USER,
+            pass: process.env.FROM_EMAIL_PASS,
         };
         console.log("Attempting to send email with credentials: ", auth);
         const transporter = nodemailer.createTransport({
@@ -15,11 +15,21 @@ export default defineEventHandler(async (event) => {
 
         const mailOptions = {
             from: "support@lobowebsites.com",
-            to: "carlosvillalobos1047@gmail.com",
+            to: process.env.TO_EMAIL_USER,
             subject: body.subject,
             html: body.html,
-            attachments: body.attachments,
+            attachments: [],
         };
+
+        if (body.attachments) {
+            for (const attachment of body.attachments) {
+                mailOptions.attachments.push({
+                    filename: attachment.filename,
+                    content: attachment.content,
+                    encoding: "base64",
+                });
+            }
+        }
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
@@ -30,8 +40,14 @@ export default defineEventHandler(async (event) => {
         });
 
         return {
-            message: "Message sent.",
-            mailOptions,
+            message: "Message sent successfully.",
+            mailOptions: {
+                from: mailOptions.from,
+                to: mailOptions.to,
+                subject: mailOptions.subject,
+                html: mailOptions.html,
+                attachmentCount: mailOptions.attachments.length,
+            },
         };
     } catch (err) {
         return JSON.parse(err);

@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent.stop="onSubmit" class="form flex flex-col gap-4 text-left">
-        <label for="input1">Nombre Completo </label>
+        <label for="input1">*Nombre Completo </label>
         <input
             id="input1"
             type="text"
@@ -10,10 +10,10 @@
             v-model="form.name"
         />
 
-        <label for="input2">Teléfono </label>
+        <label for="input2">*Teléfono </label>
         <input
             id="input2"
-            type="phone"
+            type="tel"
             name="phone"
             required
             class="bg-white rounded-lg h-12 px-4 py-2 duration-700 outline-transparent focus-visible:outline-primary text-primary-text"
@@ -29,11 +29,12 @@
             v-model="form.email"
         />
 
-        <label for="input4">Comentario </label>
+        <label for="input4">*Comentario </label>
         <textarea
             id="input4"
             name="comment"
             class="bg-white rounded-lg h-24 px-4 py-2 duration-700 outline-transparent focus-visible:outline-primary text-primary-text resize-none"
+            required
             v-model="form.comment"
         />
 
