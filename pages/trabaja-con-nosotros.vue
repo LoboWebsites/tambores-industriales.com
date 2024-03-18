@@ -11,4 +11,6 @@
     </NuxtLayout>
 </template>
 
-<script setup></script>
+<script setup>
+    useHead({ link: [{ rel: "preload", href: "/work-with-us/work-with-us-bg.webp" }] });
+</script>

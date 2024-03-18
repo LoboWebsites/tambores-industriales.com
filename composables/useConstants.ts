@@ -23,7 +23,7 @@ export function useConstants() {
     const contactLinks = ref([
         {
             name: "Email",
-            text: " sandra.tamind@gmail.com",
+            text: "sandra.tamind@gmail.com",
             icon: "material-symbols:mail",
             link: "",
         },

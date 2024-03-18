@@ -12,5 +12,5 @@
 </template>
 
 <script setup>
-    const { $t, $i } = useConfigStore();
+    useHead({ link: [{ rel: "preload", href: "/services/services-bg.webp" }] });
 </script>

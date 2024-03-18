@@ -11,4 +11,5 @@
 
 <script setup>
     const { sm } = useScreen;
+    useHead({ link: [{ rel: "preload", href: "/home/hero-section-bg.webp" }] });
 </script>
