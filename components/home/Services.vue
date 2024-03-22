@@ -5,12 +5,12 @@
                 <h2 class="font-bold mb-4">Nuestros Servicios</h2>
                 <p>
                     Ofrecemos a nuestros clientes tambores metálicos abiertos y cerrados de 55 galones y IBC plásticos
-                    de 1.000 litros, dando un excelente servicio de calidad.
+                    de 1.000 litros.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-10 mb-20">
-                <div v-for="block in blocks" class="text-center">
+                <div v-for="block in blocks" class="text-center flex flex-col py-10 px-4">
                     <img :src="block.image" alt="imagen-servicio" class="w-40 h-40 rounded-md shadow-md m-auto" />
                     <h2 class="font-bold my-2">{{ block.title }}</h2>
                     <p>
@@ -20,9 +20,7 @@
             </div>
 
             <div class="flex justify-center">
-                <a href="/servicios">
-                    <UiButton primary>Conoce más</UiButton>
-                </a>
+                <UiButton primary link="/servicios">Conoce más</UiButton>
             </div>
         </div>
     </NuxtLayout>
@@ -37,12 +35,12 @@
         },
         {
             title: "Tambor Abierto",
-            subtitle: `Tapa removible con aro de cierre de tornillo o palanca con recubrimiento interno para uso de alimentos`,
+            subtitle: `Tapa removible con aro de cierre de tornillo o palanca.`,
             image: "/home/tambor-abierto.webp",
         },
         {
             title: "Contenedores Plásticos",
-            subtitle: `Capacidad para 275 galones, de material PEHD macromolecular por soplado de extrusión.`,
+            subtitle: `Capacidad para 275 galones, recipiente de PEHD macromolecular protegido por jaula metálica.`,
             image: "/home/contenedores-plasticos.webp",
         },
     ];

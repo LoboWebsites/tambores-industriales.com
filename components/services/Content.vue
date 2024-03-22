@@ -24,7 +24,6 @@
                         <li>Bridas (envase TH) 2 in y ¾ in</li>
                     </ul>
                 </div>
-                <p class="text-sm italic">*No hacemos disposición final de residuos.</p>
             </div>
         </div>
     </NuxtLayout>

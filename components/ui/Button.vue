@@ -1,5 +1,10 @@
 <template>
-    <button :type="type" :class="btnClass" class="flex justify-center items-center" :disabled="disabled">
+    <a v-if="link" :href="link" class="button-link">
+        <button :type="type" :class="btnClass" class="flex justify-center items-center" :disabled="disabled">
+            <slot />
+        </button>
+    </a>
+    <button v-else :type="type" :class="btnClass" class="flex justify-center items-center" :disabled="disabled">
         <slot />
     </button>
 </template>
@@ -11,6 +16,7 @@
         secondary: Boolean,
         type: String,
         disabled: Boolean,
+        link: String,
     });
 
     const btnClass = computed(() => {
@@ -32,3 +38,10 @@
         return name;
     });
 </script>
+
+<style lang="scss">
+    .button-link {
+        display: inline-block; /* Ensure the link only takes up the width of the button */
+        text-decoration: none; /* Remove default underline styling */
+    }
+</style>

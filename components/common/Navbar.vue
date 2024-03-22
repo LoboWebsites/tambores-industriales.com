@@ -57,9 +57,9 @@
                 </li>
                 <li class="list-none">
                     <div>
-                        <a href="/contactanos#top">
-                            <UiButton :primary="ctaPrimary" :secondary="ctaSecondary">Contáctanos</UiButton>
-                        </a>
+                        <UiButton id="cta-btn" :primary="ctaPrimary" :secondary="ctaSecondary" link="/contactanos#top">
+                            Contáctanos
+                        </UiButton>
                     </div>
                 </li>
             </ul>
@@ -86,6 +86,7 @@
 
     function setupScrollHide() {
         const navbar = document.getElementById("home-navbar");
+        const cta = document.getElementById("cta-btn");
         let prevScrollPos = window.scrollY;
 
         window.addEventListener("scroll", () => {
@@ -97,6 +98,7 @@
                 if (transparentOnTop && currentScrollPos === 0) {
                     navbar.classList.add("!bg-transparent");
                     navbar.classList.remove("!text-white");
+                    cta.firstChild.classList.remove("!bg-secondary");
                     if (colorOnTop) {
                         navbar.classList.add(`!text-${colorOnTop}`);
                     }
@@ -110,6 +112,7 @@
                         navbar.classList.remove("!bg-transparent");
                         navbar.classList.add("!text-white");
                         navbar.classList.remove(`!text-${colorOnTop}`);
+                        cta.firstChild.classList.add("!bg-secondary");
                         transparentTransition.value = false;
                     }, 500);
                 }

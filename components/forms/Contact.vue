@@ -20,11 +20,12 @@
             v-model="form.phone"
         />
 
-        <label for="input3">Correo (Opcional) </label>
+        <label for="input3">*Correo </label>
         <input
             id="input3"
             type="email"
             name="email"
+            required
             class="bg-white rounded-lg h-12 px-4 py-2 duration-700 outline-transparent focus-visible:outline-primary text-primary-text"
             v-model="form.email"
         />

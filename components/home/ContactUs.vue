@@ -8,16 +8,12 @@
                 <div>
                     <h2 class="font-bold mb-4">Contáctanos</h2>
                     <p class="mb-10">
-                        Estamos aquí para ayudarte en cualquier cosa que necesites. Ya sea para discutir oportunidades
-                        de colaboración comercial o para trabajar con nosotros, estamos listos para escucharte.
+                        Estamos aquí para ayudarte. Ya sea para discutir oportunidades de colaboración comercial o para
+                        trabajar con nosotros, estamos listos para escucharte.
                     </p>
                     <div class="flex gap-10">
-                        <a href="/contactanos">
-                            <UiButton primary>Contácto Clientes</UiButton>
-                        </a>
-                        <a href="/trabaja-con-nosotros">
-                            <UiButton secondary>Trabaja con Nosotros</UiButton>
-                        </a>
+                        <UiButton primary link="/contactanos">Contácto Clientes</UiButton>
+                        <UiButton secondary link="/trabaja-con-nosotros">Trabaja con Nosotros</UiButton>
                     </div>
                 </div>
             </div>

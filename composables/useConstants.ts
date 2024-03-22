@@ -22,6 +22,12 @@ export function useConstants() {
 
     const contactLinks = ref([
         {
+            name: "NIT",
+            text: "NIT 800045660-7",
+            icon: "icon-park-solid:id-card",
+            link: "",
+        },
+        {
             name: "Email",
             text: "sandra.tamind@gmail.com",
             icon: "material-symbols:mail",
@@ -29,7 +35,7 @@ export function useConstants() {
         },
         {
             name: "Teléfono",
-            text: "601 781 6856 - 601 711 4232",
+            text: "601 781 6856",
             icon: "material-symbols:call-sharp",
             link: "",
         },
