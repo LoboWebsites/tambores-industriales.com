@@ -22,16 +22,7 @@
 <script setup lang="ts">
     import devText from "~/dev.text.json";
     import devImg from "~/dev.img.json";
-    import devEcommerce from "~/dev.ecommerce.json";
-    import {
-        Feature,
-        LoboImage,
-        FirebaseImage,
-        DateHelper,
-        ProductFirebase,
-        LoboHelpers,
-        BlogArticleFirebase,
-    } from "lobowebsites-utils";
+    import { Feature, LoboImage, FirebaseImage, DateHelper, ProductFirebase, LoboHelpers } from "lobowebsites-utils";
 
     type File = {
         base64: string;
