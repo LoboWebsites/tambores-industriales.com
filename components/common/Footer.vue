@@ -6,16 +6,17 @@
                     <p class="mb-2">
                         <a href="#top">
                             <img
-                                src="/placeholder.png"
+                                src="/logo-light.webp"
                                 alt="test logo"
                                 loading="lazy"
                                 class="cursor-pointer"
-                                style="max-width: 40px"
+                                style="max-width: 200px"
                             />
                         </a>
                     </p>
                     <p>
-                        {{ $t("footer", "contenido", "descripciónDePágina") }}
+                        Desde 1989 trabajamos con envases para la industria química y alimentaria. Ofrecemos soluciones
+                        en envases metálicos y plásticos para el almacenamiento y transporte de productos.
                     </p>
                     <div class="flex gap-12 md:gap-24 mt-8 flex-grow items-end">
                         <p>© Copyright {{ new Date().getFullYear() }}</p>
@@ -53,7 +54,7 @@
                             </a>
                             <span v-else>{{ l.text }}</span>
                         </p>
-                        <UiButton class="mt-6 mb-0 flex-grow items-end" secondary link="/contactanos#top"
+                        <UiButton class="mt-12 mb-0 flex-grow items-end" secondary link="/contactanos#top"
                             >Contáctanos
                         </UiButton>
                     </div>

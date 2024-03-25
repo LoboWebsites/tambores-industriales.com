@@ -8,13 +8,7 @@
         <div class="m-auto h-full flex items-center">
             <div>
                 <a href="#top">
-                    <NuxtImg
-                        src="placeholder.png"
-                        alt="logo"
-                        preload
-                        style="max-width: 40px"
-                        class="my-4 cursor-pointer"
-                    />
+                    <NuxtImg :src="logoSrc" alt="logo" preload style="max-width: 190px" class="my-4 cursor-pointer" />
                 </a>
             </div>
             <ul class="flex flex-grow gap-8 justify-end">
@@ -71,6 +65,7 @@
     const { websiteLinks } = useConstants();
 
     const { bgColor, scrollHide, transparentOnTop, colorOnTop } = defineProps({
+        logoSrc: String,
         bgColor: String,
         transparentOnTop: Boolean,
         colorOnTop: String,

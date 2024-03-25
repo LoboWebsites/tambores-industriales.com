@@ -1,6 +1,12 @@
 <template>
     <NuxtLayout>
-        <CommonNavbar bg-color="var(--primary)" transparent-on-top color-on-top="white" ctaSecondary />
+        <CommonNavbar
+            bg-color="var(--primary)"
+            transparent-on-top
+            color-on-top="white"
+            ctaSecondary
+            logo-src="/logo-light.webp"
+        />
         <CommonSubpageHeader
             title="Contáctanos"
             subtitle="¡Contáctanos para solicitar nuestros servicios! Completa el formulario y nos pondremos en contacto contigo lo antes posible."
