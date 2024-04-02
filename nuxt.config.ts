@@ -14,7 +14,7 @@ export default defineNuxtConfig({
                     property: "og:description",
                     content: "Tambores abiertos, tambores cerrados, contenedores de plástico. Bogotá.",
                 },
-                { property: "og:image", content: "/logo-1.svg" },
+                { property: "og:image", content: "/logo.webp" },
                 { property: "og:url", content: "www.tamboresindustriales.com" },
                 { property: "og:type", content: "website" },
 
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
                     name: "twitter:description",
                     content: "Tambores abiertos, tambores cerrados, contenedores de plástico. Bogotá.",
                 },
-                //{ name: "twitter:image", content: "/logo-1.svg" },
+                { name: "twitter:image", content: "/logo.webp" },
             ],
         },
     },
