@@ -49,7 +49,7 @@
                         </template>
                     </UiPopup>
                 </li>
-                <li class="list-none">
+                <li class="list-none hidden md:block">
                     <div>
                         <UiButton id="cta-btn" :primary="ctaPrimary" :secondary="ctaSecondary" link="/contactanos#top">
                             Contáctanos
