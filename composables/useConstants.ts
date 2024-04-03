@@ -35,7 +35,7 @@ export function useConstants() {
         },
         {
             name: "Teléfono",
-            text: "601 781 6856",
+            text: "601 781 6856 - 315 925 4748",
             icon: "material-symbols:call-sharp",
             link: "",
         },

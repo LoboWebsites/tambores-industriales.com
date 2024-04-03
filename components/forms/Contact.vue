@@ -60,7 +60,7 @@
     });
 
     async function onSubmit() {
-        let subject = "Formulario de Contácto - Tamboresindustriales.com";
+        let subject = "Formulario de Contacto - Tamboresindustriales.com";
         let html = `
             <p><strong>Nombre completo:</strong> ${form.value.name}</p>
             <p><strong>Teléfono:</strong> ${form.value.phone}</p>

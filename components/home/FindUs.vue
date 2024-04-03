@@ -2,7 +2,7 @@
     <NuxtLayout name="section">
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-20">
             <div>
-                <h2 class="font-bold mb-4">Encuentranos en Google Maps</h2>
+                <h2 class="font-bold mb-4">Encuéntranos en Google Maps</h2>
                 <p>Explora nuestra ubicación precisa en el mapa de Google y visítanos en persona.</p>
             </div>
             <div>
