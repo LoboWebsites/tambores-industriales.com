@@ -18,6 +18,11 @@ export function useConstants() {
             name: $t("barraDeNavegación", "links", "trabajaConNosotros"),
             navigateTo: "/trabaja-con-nosotros",
         },
+        {
+            name: "P.Q.R.",
+            navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSc41XijQ3nvWBN74e0Yt5raYnVEe_cMVlpmqePZq1nEQNwI4w/viewform?usp=header",
+            footerOnly: true,
+        }
     ]);
 
     const contactLinks = ref([
@@ -35,7 +40,7 @@ export function useConstants() {
         },
         {
             name: "Teléfono",
-            text: "601 781 6856 - 315 925 4748",
+            text: "315 925 4748",
             icon: "material-symbols:call-sharp",
             link: "",
         },

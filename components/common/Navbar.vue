@@ -15,7 +15,7 @@
                 <li
                     v-for="link in websiteLinks"
                     class="self-center hidden lg:flex font-bold"
-                    :class="{ '!hidden': link.isCta }"
+                    :class="{ '!hidden': (link.isCta || link.footerOnly) }"
                 >
                     <UiPopup v-if="link.list" open-on-hover>
                         {{ link.name }} <Icon name="ic:baseline-arrow-drop-down" />
