@@ -11,6 +11,9 @@
         "start": "node .output/server/index.mjs"
     },
     "type": "module",
+    "engines": {
+        "node": "22.x"
+    },
     "devDependencies": {
         "@nuxt/image-edge": "^1.0.0-28099902.2b6ed1c",
         "@nuxtjs/tailwindcss": "^6.6.7",
