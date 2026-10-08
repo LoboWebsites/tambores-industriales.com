@@ -9,7 +9,7 @@
                 <p>
                     Producimos tambores metálicos cilíndricos tipo TH (tight head) y OH (open head). Nuestros envases
                     permiten personalizar según su uso y presentación. Podemos trabajar con calibres de lámina de acero
-                    desde 16 hasta 22, según la necesidad del cliente
+                    desde 18 hasta 22, según la necesidad del cliente
                 </p>
                 <p>
                     El acabado interno puede hacerse con cualquier recubrimiento horneable, como recubrimiento estándar
@@ -20,7 +20,7 @@
                     <p>Dimensiones:</p>
                     <ul>
                         <li>Altura 885 mm</li>
-                        <li>Diametro 790mm</li>
+                        <li>Diametro 584mm</li>
                         <li>Bridas (envase TH) 2 in y ¾ in</li>
                     </ul>
                 </div>
